@@ -11,4 +11,5 @@ def warn_the_sheep():
         sheep_in_danger = len(animals) - wolf_position - 1
         print(f"Oi! Sheep number {sheep_in_danger}! You are about to be eaten by a wolf!")
 
+
 warn_the_sheep()
