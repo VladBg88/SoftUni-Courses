@@ -11,5 +11,3 @@ for i in range(floors, 0, -1):
             print("A{0}{1} ".format(i, j), end="")
 
     print("")
-
-#test
