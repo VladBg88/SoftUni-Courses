@@ -1,5 +1,5 @@
 def warn_the_sheep():
-    queue = input("Enter the animals in the queue (e.g. 'sheep, sheep, wolf'): ")
+    queue = input()
 
     animals = queue.split(", ")
 
