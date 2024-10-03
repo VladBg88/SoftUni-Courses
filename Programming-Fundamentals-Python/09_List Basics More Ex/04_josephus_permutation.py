@@ -1,10 +1,13 @@
-suicide_list = input().split()
-unlucky_guy = int(input())
-killed_guys = []
+all_people = input().split()
+unlucky_number = int(input())
+alive_people = all_people[:]
+how_they_died = []
 
-for i in range(unlucky_guy, len(suicide_list), unlucky_guy):
-    killed_guys.append(suicide_list[i])
+index = unlucky_number - 1
 
+while len(alive_people) > 0:
+    index = index % len(alive_people)
+    how_they_died.append(int(alive_people.pop(index)))
+    index += unlucky_number - 1
 
-
-
+print(f"[{','.join(map(str, how_they_died))}]")
