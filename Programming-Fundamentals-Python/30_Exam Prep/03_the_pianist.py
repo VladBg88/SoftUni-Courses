@@ -19,7 +19,7 @@ while True:
         if new_piece in all_data:
             print(f"{new_piece} is already in the collection!")
             continue
-        all_data[new_piece] =[new_composer, new_key]
+        all_data[new_piece] = [new_composer, new_key]
         print(f"{new_piece} by {new_composer} in {new_key} added to the collection!")
     elif command[0] == "Remove":
         piece_to_remove = command[1]

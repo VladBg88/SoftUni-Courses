@@ -3,9 +3,8 @@ moving_targets_list = list(map(int, input().split()))
 
 def shoot(user_list, user_index, user_value):
     if 0 <= user_index < len(user_list):
-        if user_list[user_index] >= user_value:
-            user_list[user_index] -= user_value
-        else:
+        user_list[user_index] -= user_value
+        if user_list[user_index] <= 0:
             user_list.pop(user_index)
 
     return user_list
