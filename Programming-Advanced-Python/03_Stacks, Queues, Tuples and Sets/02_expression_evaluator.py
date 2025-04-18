@@ -9,22 +9,23 @@ for element in user_input:
         number = int(element)
         current_numbers.append(number)
     except ValueError:
-        if element == '+':
-            for digit in current_numbers:
-                final_result += digit
-            current_numbers = []
-        elif element == '-':
-            for digit in current_numbers:
-                final_result -= digit
-            current_numbers = []
-        elif element == '/':
-            for digit in current_numbers:
-                final_result = floor(final_result / digit)
-            current_numbers = []
-        elif element == '*':
-            for digit in current_numbers:
-                final_result *= digit
-            current_numbers = []
+        pass
+    if element == '+':
+        for digit in current_numbers:
+            final_result += digit
+        current_numbers = []
+    elif element == '-':
+        for digit in current_numbers:
+            final_result -= digit
+        current_numbers = []
+    elif element == '/':
+        for digit in current_numbers:
+            final_result = floor(final_result / digit)
+        current_numbers = []
+    elif element == '*':
+        for digit in current_numbers:
+            final_result *= digit
+        current_numbers = []
 
 print(final_result)
 
