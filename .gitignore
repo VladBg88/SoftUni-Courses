@@ -6,6 +6,8 @@
 *.iml
 misc.xml
 workspace.xml
+.idea/misc.xml
+
 
 # Python cache
 __pycache__/
