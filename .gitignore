@@ -1,2 +1,23 @@
 # created by virtualenv automatically
 .venv/Lib
+
+# PyCharm project files
+.idea/
+*.iml
+misc.xml
+workspace.xml
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
