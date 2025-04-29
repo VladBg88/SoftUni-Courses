@@ -1,9 +1,6 @@
 matrix_size = int(input())
-matrix = []
+matrix = [[x for x in input()] for x in range(matrix_size)]
 stop = False
-
-for _ in range(matrix_size):
-    matrix.append(input())
 
 find_symbol = input()
 
