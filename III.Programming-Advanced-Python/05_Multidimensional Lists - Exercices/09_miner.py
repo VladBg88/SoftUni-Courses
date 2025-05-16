@@ -43,7 +43,7 @@ while commands:
             continue
 
     if matrix[miner_location["row"]][miner_location["col"]] == 'e':
-        print(f"Game over! ({miner_location["row"]}, {miner_location["col"]})")
+        print(f"Game over! ({miner_location['row']}, {miner_location['col']})")
         exit()
     elif matrix[miner_location["row"]][miner_location["col"]] == 'c':
         matrix[miner_location["row"]][miner_location["col"]] = '*'
@@ -51,9 +51,9 @@ while commands:
         collected_coal += 1
 
     if current_coal == 0:
-        print(f"You collected all coal! ({miner_location["row"]}, {miner_location["col"]})")
+        print(f"You collected all coal! ({miner_location['row']}, {miner_location['col']})")
         exit()
 
 
-print(f"{current_coal} pieces of coal left. ({miner_location["row"]}, {miner_location["col"]})")
+print(f"{current_coal} pieces of coal left. ({miner_location['row']}, {miner_location['col']})")
 
